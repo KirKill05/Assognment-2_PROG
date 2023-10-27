@@ -21,7 +21,7 @@ total_sold = 0
 while month != 12:
     print("Month:", month)
     print("    Manifactured:", montly_production)
-    selling = montly_production + random(-10, 11)
+    selling = montly_production + random.randint(-10, 10)
     total_sold += selling 
     print("    Sold:",  selling)
     cr_stock = montly_production + cr_stock - selling
